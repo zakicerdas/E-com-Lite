@@ -34,10 +34,10 @@ const ProductCard: React.FC<Props> = ({ product, className = "" }) => {
       </div>
 
       <div className="px-4 py-3 flex-1 flex flex-col">
-        <div className="flex items-start justify-between gap-3">
+        <div className="flex items-start justify-between gap-3 text-black">
           <h3
             id={`product-title-${product.id}`}
-            className="text-sm font-semibold leading-tight line-clamp-2 text-black"
+            className="text-sm font-semibold leading-tight line-clamp-2"
             title={product.title}
           >
             {product.title}
@@ -66,7 +66,7 @@ const ProductCard: React.FC<Props> = ({ product, className = "" }) => {
           )}
         </div>
 
-        <p className="mt-3 text-xs text-slate-300 line-clamp-3">
+        <p className="mt-3 text-xs text-black line-clamp-3">
           {product.description}
         </p>
 
