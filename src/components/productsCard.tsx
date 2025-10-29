@@ -18,13 +18,12 @@ const ProductCard: React.FC<Props> = ({ product, className = "" }) => {
   return (
     <article
       className={
-        "panel flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-150 " +
+        "panel flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-all duration-150" +
         "border border-slate-700/40 rounded-lg " +
         className
       }
       aria-labelledby={`product-title-${product.id}`}
     >
-      {/* Image */}
       <div className="w-full h-44 md:h-40 lg:h-44 flex items-center justify-center bg-slate-800/40">
         <img
           src={product.image}
@@ -34,12 +33,11 @@ const ProductCard: React.FC<Props> = ({ product, className = "" }) => {
         />
       </div>
 
-      {/* Content */}
       <div className="px-4 py-3 flex-1 flex flex-col">
         <div className="flex items-start justify-between gap-3">
           <h3
             id={`product-title-${product.id}`}
-            className="text-sm font-semibold leading-tight text-white line-clamp-2"
+            className="text-sm font-semibold leading-tight line-clamp-2 text-black"
             title={product.title}
           >
             {product.title}
