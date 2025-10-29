@@ -60,7 +60,7 @@ const CartModal: React.FC<Props> = ({ isOpen, onClose }) => {
                       min={1}
                       value={quantity}
                       onChange={(e) => setQuantity(Number(product.id), Math.max(1, Number(e.target.value) || 1))}
-                      className="w-20 px-2 py-1 rounded bg-slate-100 dark:bg-slate-700"
+                      className="w-20 px-2 py-1 rounded bg-slate-100 border"
                     />
                   </div>
                 </div>
